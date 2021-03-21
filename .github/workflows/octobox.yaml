@@ -1,4 +1,4 @@
-name: Docker build ghcr.io/meyskens/crewlink
+name: Docker build ghcr.io/meyskens/octobox
 
 on:
   push:
@@ -16,4 +16,4 @@ jobs:
     - name: Log in to registry
       run: echo ${{ secrets.CR_PAT }} | docker login ghcr.io -u $GITHUB_ACTOR --password-stdin
     - name: Build the Docker image
-      run: ./build.sh "https://github.com/ottomated/CrewLink-server.git" "ghcr.io/meyskens/crewlink" ""
+      run: ./build.sh "https://github.com/octobox/octobox.git" "ghcr.io/meyskens/octobox" ""

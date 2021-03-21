@@ -1,2 +1,3 @@
 repo,path,target
 https://github.com/ottomated/CrewLink-server.git,,ghcr.io/meyskens/crewlink
+https://github.com/octobox/octobox.git,,ghcr.io/meyskens/octobox
