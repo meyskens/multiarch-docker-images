@@ -1,0 +1,19 @@
+name: Docker build ghcr.io/meyskens/crewlink
+
+on:
+  push:
+    branches: [ main ]
+  schedule:
+    - cron: '0 0 * * 0'  # every sunday at midnight
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install deps
+      run: ./install.sh
+    - name: Log in to registry
+      run: echo ${{ secrets.CR_PAT }} | docker login ghcr.io -u $GITHUB_ACTOR --password-stdin
+    - name: Build the Docker image
+      run: ./build "https://github.com/ottomated/CrewLink-server.git" "ghcr.io/meyskens/crewlink" ""
