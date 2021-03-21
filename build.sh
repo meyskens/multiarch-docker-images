@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ "$3" == ""]; then
+if [ "$3" == "" ]; then
     echo "Usage build.sh <repo> <target> <platforms> <path in repo>"
     exit 1
 fi
