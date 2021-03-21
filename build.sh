@@ -22,4 +22,4 @@ if [ "$(git tag -n)" != "" ]; then
     TAG=$(git describe --tags $(git rev-list --tags --max-count=1))
     git checkout $TAG
     docker buildx build --platform "$3" -t "$2:$TAG" --push .
-f
+fi
