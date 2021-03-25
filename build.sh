@@ -10,7 +10,7 @@ TEMP=$(mktemp -d)
 cd $TEMP
 git clone $1 ./
 
-if [ "$4" != ""]; then
+if [ "$4" != "" ]; then
     cd "$4"
 fi
 
