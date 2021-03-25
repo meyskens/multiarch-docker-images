@@ -2,3 +2,4 @@ repo,path,target,platforms
 https://github.com/ottomated/CrewLink-server.git,,ghcr.io/meyskens/crewlink,"linux/amd64,linux/arm64,linux/arm"
 https://github.com/octobox/octobox.git,,ghcr.io/meyskens/octobox,"linux/amd64,linux/arm64"
 https://github.com/meyskens/k8s-windowsxp-rootless.git,,ghcr.io/meyskens/k8s-windowsxp-rootless,"linux/amd64,linux/arm64,linux/arm"
+https://github.com/zalando/spilo.git,postgres-appliance,ghcr.io/meyskens/spilo,"linux/amd64,linux/arm64,linux/arm"
