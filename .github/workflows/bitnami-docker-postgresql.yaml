@@ -1,4 +1,4 @@
-name: Docker build ghcr.io/meyskens/bitnami-docker-postgresql
+name: bitnami-docker-postgresql
 
 on:
   push:

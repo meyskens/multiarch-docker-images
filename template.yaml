@@ -1,4 +1,4 @@
-name: Docker build $target
+name: $name
 
 on:
   push:

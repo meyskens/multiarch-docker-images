@@ -1,4 +1,4 @@
-name: Docker build ghcr.io/meyskens/octobox
+name: octobox
 
 on:
   push:

@@ -1,4 +1,4 @@
-name: Docker build ghcr.io/meyskens/bitnami-shell
+name: bitnami-shell
 
 on:
   push:
