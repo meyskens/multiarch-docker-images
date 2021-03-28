@@ -1,4 +1,4 @@
-name: Docker build $target
+name: Docker build ghcr.io/meyskens/bitnami-docker-postgresql-repmgr
 
 on:
   push:
@@ -16,4 +16,4 @@ jobs:
     - name: Log in to registry
       run: echo ${{ secrets.CR_PAT }} | docker login ghcr.io -u $GITHUB_ACTOR --password-stdin
     - name: Build the Docker image
-      run: ./build.sh "$repo" "$target" "$platforms" "$path" "$tagfilter"
+      run: ./build.sh "https://github.com/bitnami/bitnami-docker-postgresql-repmgr.git" "ghcr.io/meyskens/bitnami-docker-postgresql-repmgr" "linux/amd64:linux/arm64:linux/arm" "13/debian-10/" "^13."

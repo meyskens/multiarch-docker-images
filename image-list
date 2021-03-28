@@ -1,5 +1,7 @@
-repo,path,target,platforms
-https://github.com/ottomated/CrewLink-server.git,,ghcr.io/meyskens/crewlink,"linux/amd64,linux/arm64,linux/arm"
-https://github.com/octobox/octobox.git,,ghcr.io/meyskens/octobox,"linux/amd64,linux/arm64"
-https://github.com/meyskens/k8s-windowsxp-rootless.git,,ghcr.io/meyskens/k8s-windowsxp-rootless,"linux/amd64,linux/arm64,linux/arm"
-https://github.com/zalando/spilo.git,postgres-appliance,ghcr.io/meyskens/spilo,"linux/amd64,linux/arm64,linux/arm"
+repo,path,target,platforms,tagfilter
+https://github.com/ottomated/CrewLink-server.git,,ghcr.io/meyskens/crewlink,linux/amd64:linux/arm64:linux/arm
+https://github.com/octobox/octobox.git,,ghcr.io/meyskens/octobox,linux/amd64:linux/arm64
+https://github.com/meyskens/k8s-windowsxp-rootless.git,,ghcr.io/meyskens/k8s-windowsxp-rootless,linux/amd64:linux/arm64:linux/arm
+https://github.com/bitnami/bitnami-docker-postgresql-repmgr.git,13/debian-10/,ghcr.io/meyskens/bitnami-docker-postgresql-repmgr,linux/amd64:linux/arm64:linux/arm,^13.
+https://github.com/bitnami/bitnami-docker-postgresql.git,13/debian-10/,ghcr.io/meyskens/bitnami-docker-postgresql,linux/amd64:linux/arm64:linux/arm,^13.
+https://github.com/bitnami/bitnami-docker-bitnami-shell.git,10/debian-10/,ghcr.io/meyskens/bitnami-shell,linux/amd64:linux/arm64:linux/arm,^10.
