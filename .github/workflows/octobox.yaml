@@ -14,6 +14,6 @@ jobs:
     - name: Install deps
       run: ./install.sh
     - name: Log in to registry
-      run: echo ${{ secrets.CR_PAT }} | docker login ghcr.io -u $GITHUB_ACTOR --password-stdin
+      run: echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u $GITHUB_ACTOR --password-stdin
     - name: Build the Docker image
       run: ./build.sh "https://github.com/octobox/octobox.git" "ghcr.io/meyskens/octobox" "linux/amd64:linux/arm64" "" ""
