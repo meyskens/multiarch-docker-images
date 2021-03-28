@@ -19,12 +19,12 @@ awk '/FROM/ { print; print "LABEL org.opencontainers.image.source=https://github
 # Patches Bitnami with the official Debian
 sed -i 's/docker.io\/bitnami\/minideb/docker.io\/debian/g' Dockerfile
 
-docker buildx build --platform "$3" -t "$2:main" --push .
+docker buildx build --platform "$(echo $3 | sed 's/:/,/g')" -t "$2:main" --push .
 
 if [ "$(git tag -n)" != "" ]; then
     TAG=$(git describe --tags $(git rev-list --tags --max-count=1))
     if [ "$5" != "" ]; then
-        TAG=$(git tag -n | grep "$5" | head -n 1)
+        TAG=$(git tag -n | grep "$5" | head -n 1 | cut -d " " -f 1)
     fi
     
     git checkout $TAG
