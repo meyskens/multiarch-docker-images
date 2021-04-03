@@ -3,3 +3,4 @@ https://github.com/ottomated/CrewLink-server.git,,ghcr.io/meyskens/crewlink,linu
 https://github.com/octobox/octobox.git,,ghcr.io/meyskens/octobox,linux/amd64:linux/arm64
 https://github.com/meyskens/k8s-windowsxp-rootless.git,,ghcr.io/meyskens/k8s-windowsxp-rootless,linux/amd64:linux/arm64:linux/arm
 https://github.com/bitnami/bitnami-docker-bitnami-shell.git,10/debian-10/,ghcr.io/meyskens/bitnami-shell,linux/amd64:linux/arm64:linux/arm,^10.
+https://github.com/runatlantis/atlantis.git,docker-base,ghcr.io/meyskens/atlantis-base,linux/amd64:linux/arm64:linux/arm
